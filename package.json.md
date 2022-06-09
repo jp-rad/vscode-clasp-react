@@ -93,7 +93,7 @@ scripts["clean"] = async () => {
 async function buildAll() {
     await cleanAll();
     await $`cp -r ./src/* ./.apps_script`;
-    await $`rm -rf ./.apps_script/app`;
+    await $`rm -rf ./.apps_script/app ./.apps_script/setupTests.ts`;
     await $`npx parcel build src/index.html --no-cache --no-source-maps --dist-dir .build`;
     await $`cp ./.build/index.html ./.apps_script`;
 }
