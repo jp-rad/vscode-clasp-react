@@ -4,7 +4,8 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "GAS ログイン",
+            // "label": "GAS ログイン",
+            "label": "GAS login",
             "type": "shell",
             "command": "npx",
             "args": [
@@ -16,7 +17,8 @@
             "problemMatcher": []
         },
         {
-            "label": "GAS ログアウト",
+            // "label": "GAS ログアウト",
+            "label": "GAS logout",
             "type": "shell",
             "command": "npx",
             "args": [
@@ -28,7 +30,8 @@
             "problemMatcher": []
         },
         {
-            "label": "GAS クローン",
+            // "label": "GAS クローン",
+            "label": "GAS clone",
             "type": "shell",
             "command": "npx",
             "args": [
@@ -41,7 +44,8 @@
             "problemMatcher": []
         },
         {
-            "label": "GAS ビルドとプッシュ",
+            // "label": "GAS ビルドとプッシュ",
+            "label": "GAS build to push",
             "type": "shell",
             "command": "npx",
             "args": [
@@ -57,7 +61,8 @@
             }
         },
         {
-            "label": "GAS プル",
+            // "label": "GAS プル",
+            "label": "GAS pull",
             "type": "shell",
             "command": "npx",
             "args": [
@@ -69,7 +74,8 @@
             "problemMatcher": []
         },
         {
-            "label": "GAS オープン",
+            // "label": "GAS オープン",
+            "label": "GAS open",
             "type": "shell",
             "command": "npx",
             "args": [
@@ -83,8 +89,9 @@
     ],
     "inputs": [
         {
+            // "description": "スクリプト ID",
+            "description": "Script ID",
             "id": "scriptId",
-            "description": "スクリプト ID",
             "default": "",
             "type": "promptString"
         },

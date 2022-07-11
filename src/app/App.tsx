@@ -1,8 +1,11 @@
 import React from 'react';
 import Logo from './Logo';
 //import './App.css'; // ==> ../index.html
+import { useData } from './providers/HtmlTemplateDataProvider';
 
 function App() {
+  const { data } = useData<GoogleAppsScript.Events.DoGet>();
+  const qs = (!data) ? '(data is unset)' : (!data.queryString) ? '(empty)' : data.queryString;
   return (
     <div className="App">
       <header className="App-header">
@@ -18,7 +21,9 @@ function App() {
         >
           Learn React
         </a>
-        <Logo />
+        <p>
+          data.queryString = '<code>{qs}</code>'
+        </p>
       </header>
     </div>
   );
