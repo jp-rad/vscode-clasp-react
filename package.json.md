@@ -1,7 +1,7 @@
 # google/zx
 
 ## google/zx のインストール
-`npm install --save-dev zx`
+`npm install git+https://github.com/jp-rad/zx.git#write_and_import`
 
 ## コマンド一覧
 
@@ -35,7 +35,7 @@ Google Apps Script エディタ
 
 ```javascript
 const scripts = {};
-const command = argv._[1];
+const command = argv._[0];
 ```
 
 ## clasp-login
@@ -126,6 +126,6 @@ const script = scripts[command];
 if (script) {
     await script();
 } else {
-    console.log(`Unknown command: ${argv._[1]}`);
+    console.log(`Unknown command: ${command}`);
 }
 ```

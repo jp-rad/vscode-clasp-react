@@ -49,10 +49,18 @@ export default App;
 - [VS Code](https://code.visualstudio.com/download)
 - [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
+## Templateからリポジトリの作成
+
+1. GitHubにログインします。
+1. GitHubのリポジトリを開きます。  
+https://github.com/jp-rad/vscode-clasp-react.git
+1. `Use this template` をクリックし、リポジトリを作成します。  
+[こちら - https://github.com/jp-rad/vscode-clasp-react/generate](https://github.com/jp-rad/vscode-clasp-react/generate)
+
 ## クローンとVS Codeの起動
 
-1. `git clone https://github.com/jp-rad/vscode-clasp-react.git`
-1. `vscode-clasp-react`フォルダをVS Codeで開く
+1. `git clone <your GitHub Code URL>`
+1. git clone したフォルダををVS Codeで開く
 1. Dockerを起動する
 1. VS Codeで`Reopen in Container`を実行し、Dockerコンテナーを起動する  
 （初回、ダウンロードとインストールが行われるので、待つ）
