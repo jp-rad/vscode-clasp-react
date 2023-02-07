@@ -1,7 +1,17 @@
 # google/zx
 
 ## google/zx のインストール
-`npm install git+https://github.com/jp-rad/zx.git#write_and_import`
+`yarn add https://github.com/jp-rad/zx.git#write_and_import --dev`
+
+> **Note**  
+> npmパッケージとして公開されている バージョン 7.1.1 では、Markdownを使ったスクリプトの実行に失敗します。  
+> 問題の個所は既に修正されていますが、まだ、公開されていませんので、githubのソースコードからインストールするようにします（[prepare付き](https://github.com/jp-rad/zx/blob/write_and_import/package.json#L42)）。  
+>   
+> [修正済みの該当箇所 - https://github.com/google/zx/blob/main/src/cli.ts#L141](https://github.com/google/zx/blob/main/src/cli.ts#L141)  
+>   
+> 本来は、次のコマンドでインストールします。  
+> `yarn add zx --dev`  
+
 
 ## コマンド一覧
 
